@@ -13,7 +13,11 @@
   - name: i want to install git on ubuntu16
     apt:
       name: git
-      state: present
+      state: absent
+  - name: i want to install wget 
+    apt:
+      name: wget
+    
 
 
   
