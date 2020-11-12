@@ -5,7 +5,7 @@
   - name: install git
     apt:
       name: "{{ item }}"
-    loops:
+    loop:
       - git
       - tree
       - wget
