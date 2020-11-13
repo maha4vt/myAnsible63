@@ -3,3 +3,7 @@ key: value
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
 mywebtext: i want to install webserver on ubuntu16
+
+
+myjavaOnUbuntu: openjdk-8-jre
+myjavaOnRedhat:  java-1.8.0-openjdk
