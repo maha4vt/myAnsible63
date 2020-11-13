@@ -2,26 +2,26 @@
 - hosts: webservers
   become: yes
   tasks:
-  - name: i want to install webserver on ubuntu16
+  - name: "{{mywebtext}}"
     apt:
-      name: apache2
+      name: "{{mywebpackonubuntu}}"
       state: present
     when: ansible_os_family =="Debian"
   - name: i want restart my webserver on ubuntu16
     service:
-      name: apache2
+      name: "{{mywebpackonubuntu}}"
       state: restarted
     when: ansible_os_family =="Debian"
 
   - name: i want to install webserver on RedHat
     yum:
-      name: httpd
+      name: "{{mywebpackonredhat}}"
       state: present
     when: ansible_os_family =="RedHat"
 
   - name:  i want to start webserver RedHat
     service:
-      name: httpd
+      name: "{{mywebpackonredhat}}"
       state: started
     when: ansible_os_family =="RedHat"
 
