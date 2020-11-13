@@ -17,10 +17,8 @@
 172.31.8.122
 
 
-[webservers:vars]
-mywebpackonubuntu=apache2
-mywebpackonredhat=httpd
-mywebtext=i want to install webserver on ubuntu16
+
+
 
 
 
