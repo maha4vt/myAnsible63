@@ -2,17 +2,18 @@
 - hosts: webservers
   become: yes
   tasks:
-  - name: instal git
+  - name: 1st task instal git
     apt:
       name: git
       state: present
 
-  - name: instal tree
+  - name: 2ns task instal tree
     apt:
       nameeeee: tree
       state: present
+    ignore_errors: yes
 
-  - name: instal wget
+  - name: 3rd task  instal wget
     apt:
       name: wget
       state: present
