@@ -1,0 +1,17 @@
+---
+- hosts: webservers
+  vars:
+    var1: git
+    var2: tree
+    var3: wget
+  tasks:
+  - name: debuging for var1
+    debug:
+       msg: "{{var1}}"
+    when: ansible_os_family =="Debian"
+
+  - name: install git
+    apt:
+      name: "{{var1}}"
+      state: present
+    when: ansible_os_family =="Debian"
