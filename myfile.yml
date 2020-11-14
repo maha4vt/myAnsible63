@@ -1,0 +1,5 @@
+---
+  - name: i want to create file on ansible nodes
+    file:
+      path: /home/ubnuntu/mahatextfile.txt
+      state: touch
